@@ -58,3 +58,26 @@ nav div:nth-child(2){
 a{
     text-decoration: none;
 }
+
+@media screen and (max-width:500px) {
+    nav{
+        padding: 0px 10px;
+        height: 70px;
+    }
+    nav div:nth-child(2){
+        width: 45%;
+        gap: 10px;
+    }
+    #page1{
+        height: calc(100vh - 72px);
+    }
+
+    #screen{
+        height: 70%;
+        width: 85%;
+    }
+    .container{
+        height: 23vw;
+        width: 25vw;
+    }
+}
