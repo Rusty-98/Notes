@@ -73,7 +73,7 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     nav {
         padding: 0px 10px;
     }
@@ -90,11 +90,12 @@ a {
     }
 
     #screen {
-        height: 70%;
+        height: 78%;
         width: 85%;
         justify-content: center;
         flex-direction: column;
-        flex-wrap: nowrap
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
     .container {
