@@ -1,31 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-nav{
-    height: 80px;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(94, 204, 167);
     border-bottom: 2px dotted rgb(216, 245, 22);
-}   
+}
 
-nav div:first-child{
-    font-size: 30px;
+nav div:first-child {
+    font-size: 40px;
     font-weight: bolder;
 }
 
-nav div:nth-child(2){
+nav div:nth-child(2) {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 30%;
+    justify-content: space-between;
+    font-size: 23px;
+    width: 17%;
 }
 
-#page1{
-    height: calc(100vh - 82px);
+#main {
+    width: 100%;
+}
+
+#page1 {
+    height: calc(100vh - 72px);
     width: 100%;
     background-color: black;
     display: flex;
@@ -33,18 +47,18 @@ nav div:nth-child(2){
     justify-content: center;
 }
 
-#screen{
+#screen {
     height: 80%;
     width: 80%;
     background-color: rgb(171, 176, 176);
     border-radius: 10px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px 10px;
 }
 
-.container{
+.container {
     height: 15vw;
     width: 18vw;
     background-color: red;
@@ -55,29 +69,38 @@ nav div:nth-child(2){
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 @media screen and (max-width:500px) {
-    nav{
+    nav {
         padding: 0px 10px;
-        height: 70px;
-    }
-    nav div:nth-child(2){
-        width: 45%;
-        gap: 10px;
-    }
-    #page1{
-        height: calc(100vh - 72px);
     }
 
-    #screen{
+    nav div:nth-child(2) {
+        width: 49%;
+        gap: 9px;
+        font-size: 20px;
+    }
+
+    #page1 {
+        height: calc(100vh - 70px);
+        width: 100%;
+    }
+
+    #screen {
         height: 70%;
         width: 85%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap
     }
-    .container{
+
+    .container {
         height: 23vw;
-        width: 25vw;
+        width: 80%;
+        background: red;
+        margin: 0px auto;
     }
 }
