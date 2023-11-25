@@ -34,20 +34,25 @@ html, body{
     height: 40%;
 }
 
-#contact .insta, .link{
+#contact .insta, .link, .git{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    
 }
 
 .insta i{
     font-size: 2rem;
-    margin: 5px;
+    margin: 0px 5px;
 }
 .link i{
     font-size: 2rem;
-    margin: 5px;
+    margin:0px 5px;
+}
+.git i{
+    font-size: 2rem;
+    margin:0px 5px;
 }
 
 #contact a{
@@ -123,8 +128,8 @@ a{
     #contact{
         width: 100%;
     }
-    #contact .insta, .link{
-        margin-bottom: 3rem;
+    #contact .insta, .link, .git{
+        margin-bottom: 2.5rem;
     }
 
     nav{
@@ -158,9 +163,6 @@ a{
 @media screen and (max-width:400px) {
     #contact{
         width: 100%;
-    }
-    #contact .insta, .link{
-        margin-bottom: 3rem;
     }
 
     nav{
