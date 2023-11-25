@@ -1,16 +1,61 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body{
     height: 100%;
     width: 100%;
 }
 
-nav {
+#contact{
+    background-color: rgba(0, 0, 0, 0.34);
+    height: 0;
+    width: 25%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1rem;
+    border: 0.5px solid aliceblue;
+    border-top: none ;
+    border-right: none ;
+    border-bottom-left-radius: 10px;
+    display: none;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    
+}
+
+#contact.show {
+    opacity: 1;
+    height: 40%;
+}
+
+#contact .insta, .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.insta i{
+    font-size: 2rem;
+    margin: 5px;
+}
+.link i{
+    font-size: 2rem;
+    margin: 5px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav{
     height: 70px;
     width: 100%;
     padding: 0px 20px;
@@ -19,14 +64,14 @@ nav {
     justify-content: space-between;
     background-color: rgb(94, 204, 167);
     border-bottom: 2px dotted rgb(216, 245, 22);
-}
+}   
 
-nav div:first-child {
+nav div:first-child{
     font-size: 40px;
     font-weight: bolder;
 }
 
-nav div:nth-child(2) {
+nav div:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,11 +79,11 @@ nav div:nth-child(2) {
     width: 17%;
 }
 
-#main {
+#main{
     width: 100%;
 }
 
-#page1 {
+#page1{
     height: calc(100vh - 72px);
     width: 100%;
     background-color: black;
@@ -47,18 +92,18 @@ nav div:nth-child(2) {
     justify-content: center;
 }
 
-#screen {
+#screen{
     height: 80%;
     width: 80%;
     background-color: rgb(171, 176, 176);
     border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     gap: 20px;
     padding: 20px 10px;
 }
 
-.container {
+.container{
     height: 15vw;
     width: 18vw;
     background-color: red;
@@ -67,38 +112,74 @@ nav div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-@media screen and (max-width:600px) {
-    nav {
-        padding: 0px 10px;
+@media screen and (max-width:500px) {
+    #contact{
+        width: 100%;
+    }
+    #contact .insta, .link{
+        margin-bottom: 3rem;
     }
 
-    nav div:nth-child(2) {
+    nav{
+        padding: 0px 10px;
+    }
+    nav div:nth-child(2){
         width: 49%;
         gap: 9px;
         font-size: 20px;
     }
-
-    #page1 {
+    #page1{
         height: calc(100vh - 70px);
         width: 100%;
     }
 
-    #screen {
-        height: 78%;
+    #screen{
+        height: 70%;
         width: 85%;
         justify-content: center;
         flex-direction: column;
-        flex-wrap: nowrap;
-        overflow: hidden;
+        flex-wrap: nowrap
+    }
+    .container{
+        height: 23vw;
+        width: 80%;
+        background: red;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #contact{
+        width: 100%;
+    }
+    #contact .insta, .link{
+        margin-bottom: 3rem;
     }
 
-    .container {
+    nav{
+        padding: 0px 10px;
+    }
+    nav div:nth-child(2){
+        width: 50%;
+        font-size: 18px;
+    }
+
+    #screen{
+        height: 84%;
+        width: 85%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap
+    }
+    .container{
+        height: 23vw;
         width: 80%;
         background: red;
         margin: 0px auto;
