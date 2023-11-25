@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: aliceblue;
+}
+
+#main {
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.head {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.desc {
+    font-size: 27px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    padding-left: 15px;
+    line-height: 1.2;
+}
+
+.desc span {
+    color: blueviolet;
+}
+
+.ques {
+    font-size: 27px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    color: rgb(0, 255, 55);
+}
+
+.ques span {
+    color: red;
+}
+
+.ans {
+    font-size: 27px;
+    padding: 0px 10px;
+    padding-left: 25px;
+    margin-top: 10px;
+    color: rgb(195, 0, 255);
+}
+
+.ans span {
+    color: blue;
+}
