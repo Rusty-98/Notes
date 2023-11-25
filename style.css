@@ -10,7 +10,7 @@ html, body{
 }
 
 #contact{
-    background-color: rgba(0, 0, 0, 0.34);
+    background-color: rgba(0, 0, 0, 0.447);
     height: 0;
     width: 25%;
     right: 0;
@@ -178,10 +178,25 @@ a{
         flex-direction: column;
         flex-wrap: nowrap
     }
-    .container{
-        height: 23vw;
-        width: 80%;
-        background: red;
-        margin: 0px auto;
+    
+}
+
+@media screen and (max-width:350px) {
+
+    nav{
+        padding: 0px 10px;
     }
+    nav div:nth-child(2){
+        width: 53%;
+        font-size: 18px;
+    }
+
+    #screen{
+        height: 84%;
+        width: 85%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap
+    }
+    
 }
