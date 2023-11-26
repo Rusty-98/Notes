@@ -36,7 +36,9 @@
 }
 
 .desc span {
-    color: blueviolet;
+    color: rgb(191, 127, 250);
+    /* text-decoration: underline; */
+    /* line-height: 1.4; */
 }
 
 .ques {
