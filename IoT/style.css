@@ -1,32 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: black;
-    color: white;
+    color: aliceblue;
 }
 
-::-webkit-scrollbar{
+#main {
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+}
+
+
+
+::-webkit-scrollbar {
     display: none;
 }
 
-.head{
+.head {
     font-size: 40px;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.desc{
+.desc {
     font-size: 27px;
     padding: 0px 10px;
     margin-top: 10px;
     padding-left: 15px;
+    line-height: 1.2;
 }
-.desc span{
-    color: blueviolet;
+
+.desc span {
+    color: rgb(191, 127, 250);
+    /* text-decoration: underline; */
+    /* line-height: 1.4; */
 }
-.ques{
+
+.ques {
     font-size: 27px;
     padding: 0px 10px;
     margin-top: 10px;
@@ -37,7 +52,7 @@
     color: red;
 }
 
-.ans{
+.ans {
     font-size: 27px;
     padding: 0px 10px;
     padding-left: 25px;
