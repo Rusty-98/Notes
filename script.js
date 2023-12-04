@@ -18,7 +18,7 @@ nam.addEventListener("click", (e) => {
     } else {
         show.style.display = "none";
         show.classList.remove("show");
-        nam.innerHTML = `Contact`;
+        nam.innerHTML = `FeedBack`;
         show.style.paddingTop = '2rem';
         clearInterval(intervalId);
         nam.style.color = "black";        
